@@ -96,7 +96,8 @@ As personal advice, I recommend you to always use the *xacro* format for your UR
 
 *Note:* Now, this is a xacro file exclusively to the ros2_control part. In this robot (and probably in your robot), you'll have to upload with the rest of your URDF.
 
-	<?xml version="1.0"?><!-- Hardware interface for robot's controller -->
+	<?xml version="1.0"?>
+	<!-- Hardware interface for robot's controller -->
 	<ros2_control  name="GazeboSystem"  type="system">
 		<hardware>
 			<!-- Hardware interface will be Gazebo -->
@@ -170,14 +171,13 @@ As personal advice, I recommend you to always use the *xacro* format for your UR
 		</joint>
 	</ros2_control>
 
-	<!-- Load robot's controller -->
-	<gazebo>
-		<plugin  filename="libgazebo_ros2_control.so"  name="gazebo_ros2_control">
-		<robotNamespace>centauri</robotNamespace>
-		<parameters>$(find centauri)/config/controllers.yaml</parameters>
-	</plugin>
-
-	</gazebo>
+		<!-- Load robot's controller -->
+		<gazebo>
+			<plugin  filename="libgazebo_ros2_control.so"  name="gazebo_ros2_control">
+				<robotNamespace>centauri</robotNamespace>
+				<parameters>$(find centauri)/config/controllers.yaml</parameters>
+			</plugin>
+		</gazebo>
 	</robot >
 
 ### Phase 2: ros2_control and yaml file
@@ -201,7 +201,7 @@ As personal advice, I recommend you to always use the *xacro* format for your UR
 	# Adapt the chosen controller to the 6-DOF manipulator
 	joint_group_position_controller:
 	  ros__parameters:
-		# Define which joints will be controlled
+			# Define which joints will be controlled
 	    joints:
 	      - joint1
 	      - joint2
@@ -210,11 +210,11 @@ As personal advice, I recommend you to always use the *xacro* format for your UR
 	      - joint5
 	      - joint6
 	
-		# Each joint' position can be controlled
+			# Each joint' position can be controlled
 	    command_interfaces:
 	      - position
 	
-		# Each joint' position can be read
+			# Each joint' position can be read
 	    state_interfaces:
 	      - position
 
@@ -412,3 +412,4 @@ I know all of this may seem too tedious at the beginning... but I hope you'll ev
  2. https://control.ros.org/humble/doc/gazebo_ros2_control/doc/index.html
  3. https://youtu.be/4QKsDf1c4hc?si=PAFanuoA0zBLt10v
  4. https://youtu.be/4VVrTCnxvSw?si=iNvol8ZCpBbznvc2
+
