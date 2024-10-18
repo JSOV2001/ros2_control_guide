@@ -1,6 +1,6 @@
 ## Guide for implementing *ros2_control* in an URDF and Gazebo
 
-*Note:* As the title suggests, this guide only focus on using ros2_control in Gazebo, not in real-world robots.
+*Note:* Please, remember that this guide and code are a work in progress, so don't worry if you see any changes in the future. Everything'll be updated in due time.
 
 ## Section 0: Pre-requirements
 
@@ -87,8 +87,6 @@ Now that we know the purpose of this file. I'll give a detailed example of how I
  - state_interfaces are the variables we can read
 
 *Note 2:* You can check the full code in here: https://github.com/JSOV2001/centauri.git
-
-*Note 3:* Please, remember that the robots' code and this guide are works in progress, so don't worry if you see any changes in the future. I'll update everything in due time.
 
 ### Phase 1: ros2_control and URDF
 
