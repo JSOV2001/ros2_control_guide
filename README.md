@@ -1,4 +1,4 @@
-## Guide for implementing *ros2_control* in an URDF and Gazebo
+## Guide for using *ros2_control* in URDF and Gazebo
 
 *Note:* Please, remember that this guide and code are a work in progress, so don't worry if you see any changes in the future. Everything'll be updated in due time.
 
