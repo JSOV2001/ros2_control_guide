@@ -1,5 +1,4 @@
-
-# Guide for implementing *ros2_control* in URDF and Gazebo
+# Guide for implementing ros2_control in URDF and Gazebo
 
 ## Table of Content
  1. Pre-requirements
@@ -17,6 +16,8 @@
  - Basic understanding of URDF design
  - URDF's well-computed inertia matrices
  - URDF's well-selected frictions
+
+In case that the reader doesn't meet the requirements, then read the appendix for more information.
 
 ## Installation
 Please, install the following ROS2 packages in Ubuntu terminal, as all of them required to use ros2_control properly:
