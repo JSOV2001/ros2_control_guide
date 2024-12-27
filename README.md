@@ -2,14 +2,14 @@
 **Warning:** This guide is specifically about ROS2's *Humble* variant to be clear. However, this guide probably works the same for all ROS2 distributions.
 
 ## Table of Content
- 1. Pre-requirements
+ 1. Pre-Requirements
  2. Installation
  3. Structure
  4. Implementation
-	 4.1. Part 1: URDF file
-	 4.2. Part 2: Yaml file
-	 4.3. Part 3: Launch file
-	 4.4. Part 4: Basic node
+    4.1. Part 1: URDF file
+    4.2. Part 2: Yaml file
+    4.3. Part 3: Launch file
+    4.4. Part 4: Basic node
  5. Appendix
 
 ## Pre-Requirements
