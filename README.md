@@ -1,4 +1,5 @@
-# Guide for implementing ros2_control in URDF and Gazebo
+# Guide for implementing ros2_control in URDF and Gazebo    
+**Warning:** This guide is specifically about ROS2's *Humble* variant to be clear. However, this guide probably works the same for all ROS2 distributions.
 
 ## Table of Content
  1. Pre-requirements
@@ -11,7 +12,7 @@
 	 4.4. Part 4: Basic node
  5. Appendix
 
-## Pre-requirements
+## Pre-Requirements
 
  - Basic understanding of URDF design
  - URDF's well-computed inertia matrices
@@ -20,14 +21,14 @@
 In case that the reader doesn't meet the requirements, then read the appendix for more information.
 
 ## Installation
-Please, install the following ROS2 packages in Ubuntu terminal, as all of them are required to use ros2_control properly:
+Please, install the following ROS2 packages through Ubuntu terminal:
 
     sudo apt-install ros-humble-ros2-control*
     sudo apt-install ros-humble-gazebo-ros2-control*
     sudo apt install ros-humble-control*
     sudo apt install ros-humble-resources*
-    
-**Warning:** This guide is specifically about ROS2's *Humble* variant to be clear. However, this guide probably works the same for all ROS2 distributions.
+ 
+It's worth noting that all of these are required to use ros2_control properly
 
 ## Structure
 In simple works, ros2_control is a package that allows the developer to move a robot within Gazebo, and even in real-life with the proper setup.
@@ -368,9 +369,7 @@ Here are material to study the pre-requirement concepts:
  
  - Computation of URDF's inertia matrix: https://github.com/gstavrinos/calc-inertia
  
- - Selection of Gazebo Classic's frictions: https://classic.gazebosim.org/tutorials/?tut=ros_urdf
-
-**Note:** Gazebo Classic will lose support by January 2025.
+ - Selection of Gazebo Classic's frictions: https://classic.gazebosim.org/tutorials/?tut=ros_urdf, although Gazebo Classic will lose support by January 2025.
 
 ## REFERENCES
  - https://control.ros.org/humble/doc/getting_started/getting_started.html
