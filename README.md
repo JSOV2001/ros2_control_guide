@@ -6,10 +6,6 @@
  2. Installation
  3. Structure
  4. Implementation
-    4.1. Part 1: URDF file
-    4.2. Part 2: Yaml file
-    4.3. Part 3: Launch file
-    4.4. Part 4: Basic node
  5. Appendix
 
 ## Pre-Requirements
