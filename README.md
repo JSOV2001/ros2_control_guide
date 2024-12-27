@@ -1,3 +1,4 @@
+
 # Guide for implementing *ros2_control* in URDF and Gazebo
 
 ## Table of Content
@@ -79,7 +80,7 @@ The full project can checked in this repository: https://github.com/JSOV2001/cen
 
 For the URDF design, the *xacro* format will be used, as it allows the divide the URDF into easy readable files.  
 
-**Note:** Now, this is a xacro file exclusively to the ros2_control partn not the robot structure.
+**Note:** Now, this is a xacro file exclusively to the ros2_control part, not the robot structure itself.
 
 	<?xml version="1.0"?>
 	<robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
