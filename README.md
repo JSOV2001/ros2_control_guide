@@ -20,7 +20,7 @@
 In case that the reader doesn't meet the requirements, then read the appendix for more information.
 
 ## Installation
-Please, install the following ROS2 packages in Ubuntu terminal, as all of them required to use ros2_control properly:
+Please, install the following ROS2 packages in Ubuntu terminal, as all of them are required to use ros2_control properly:
 
     sudo apt-install ros-humble-ros2-control*
     sudo apt-install ros-humble-gazebo-ros2-control*
